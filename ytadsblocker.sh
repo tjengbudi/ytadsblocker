@@ -78,6 +78,8 @@ After=network.target
 [Service]
 ExecStart=$PRINTWD/$SCRIPT_NAME start
 ExecStop=$PRINTWD/$SCRIPT_NAME stop
+Restart=always
+RestartSec=3
 [Install]
 WantedBy=multi-user.target
 	EOF
